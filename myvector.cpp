@@ -59,7 +59,7 @@ void myvector<Item>::doubleCapacity() {
  */
 template <typename Item> 
 void myvector<Item>::halveCapacity() {
-    int newSize = capacity/3;
+    int newSize = capacity/2;
     if (newSize < N) {
         __throw_bad_alloc();
     }
