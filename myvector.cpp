@@ -108,7 +108,7 @@ void myvector<Item>::set(int index, Item item) {
  * @param item Item to add
  */
 template <typename Item> 
-void myvector<Item>::add(Item item) {
+void myvector<Item>::push_back(Item item) {
     // TODO: Update this so that it doubles the capacity of the
     // underlying array if it's run out of space, so that there
     // is always enough room to add an element
@@ -129,7 +129,7 @@ void myvector<Item>::add(Item item) {
  * @param item The element to insert
  */
 template <typename Item> 
-void myvector<Item>::add(int index, Item item) {
+void myvector<Item>::insert(int index, Item item) {
     if (index < 0 || index > N) {
         __throw_runtime_error("Out of bounds error in add");
     }

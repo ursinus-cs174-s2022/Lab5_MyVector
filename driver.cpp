@@ -6,9 +6,9 @@ using namespace std;
 int main() {
     myvector<float> arr;
     for (int i = 0; i < 15; i++) {
-        arr.add(i);
+        arr.push_back(i);
     }
-    arr.add(1, 100);
-    arr.add(5, 60);
+    arr.insert(1, 100);
+    arr.insert(5, 60);
     cout << arr.toString() << "\n";
 }
