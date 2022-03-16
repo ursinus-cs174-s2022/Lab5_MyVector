@@ -69,6 +69,7 @@ void myvector<Item>::halveCapacity() {
     }
     delete[] items;
     items = newItems;
+    capacity = newSize;
 }
 
 /**
