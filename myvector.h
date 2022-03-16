@@ -77,7 +77,7 @@ class myvector {
          * Add an item to the end of the list and update its size
          * @param item Item to add
          */
-        void add(Item item);
+        void push_back(Item item);
         
         /**
          * Add an item to the middle of the list at a specified index, and
@@ -86,7 +86,7 @@ class myvector {
          * @param index The index at which to insert the element
          * @param item The element to insert
          */
-        void add(int index, Item item);
+        void insert(int index, Item item);
         
         /**
          * Return the element at a particular index
