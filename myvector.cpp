@@ -217,3 +217,10 @@ string myvector<Item>::toString() {
     ret << "]";
     return ret.str();
 }
+
+
+// Define types down here that this class will be used with
+// https://stackoverflow.com/questions/8752837/undefined-reference-to-template-class-constructor
+template class myvector<int>;
+template class myvector<float>;
+template class myvector<string>;
